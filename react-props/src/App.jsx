@@ -1,0 +1,46 @@
+import Card from "./components/Card.jsx";
+
+const App = () => {
+  return (
+    <div className="card-container">
+      <Card
+        user="Anikesh Roy"
+        company="Google"
+        age={23}
+        image="data:image/jpeg;base64,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"
+      />
+      <Card
+        user="Raman Roy"
+        company="Facebook"
+        age={21}
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIXHlIWwNlozgmkjciRkTxQkh82HHLZLTKoxKqQamEgw&s"
+      />
+      <Card
+        user="Ayush Roy"
+        company="Amazon"
+        age={20}
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESozexqSZ70tqpK8e8nlWwUyZzVdE31N41BNL3El4Qw&s=10"
+      />
+      <Card
+        user="Rahul Roy"
+        company="Flipkart"
+        age={24}
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1SipUWFbCiU0I_Uof9ZCM-sP4MkhN3VxFejmtPxe0w&s=10"
+      />
+      <Card
+        user="Sanjeev Ranjan"
+        company="Centrix"
+        age={19}
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijFbYLbTHNuIPel_1mzZHz1r6YLjfT034wvMCrFEoxg&s=10"
+      />
+      <Card
+        user="Shalini Sharma"
+        company="Myntra"
+        age={22}
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvxGTrX_N7fIBxwflNhaCyfmsmvKMUPXgnFq4YA-__6g&s=10"
+      />
+    </div>
+  );
+};
+
+export default App;

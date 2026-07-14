@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+}
+
+.card {
+  border: 1px solid #fff;
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 50px 0px;
+  text-align: center;
+  background-color: #222;
+}
+
+.card img {
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  border: 1px solid burlywood;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+
+#company-desc{
+  margin: 5px 0px;
+}
