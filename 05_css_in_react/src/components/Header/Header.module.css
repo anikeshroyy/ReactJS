@@ -1,0 +1,13 @@
+.header {
+    /* height: 80vh; */
+    padding-top: 200px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 40px;
+}

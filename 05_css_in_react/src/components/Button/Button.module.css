@@ -1,0 +1,14 @@
+.btn {
+    width: 100px;
+    margin: 30px auto;
+}
+
+button {
+    padding: 8px 10px;
+    background-color: aquamarine;
+    color: #111;
+    width: fit-content;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
