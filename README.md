@@ -9,25 +9,44 @@ This workspace contains several small React learning projects built with Vite.
 - `03_react-props` — props drilling and data passing between components
 - `04_react-mini-project` — mini project showcasing reusable card components
 - `05_css_in_react` — component styling using CSS Modules
+- `06_project-using-tailwindcss` — Tailwind CSS integration examples
+- `07_functions-in-react` — practicing functions and handlers in components
+- `08_react-useState` — state management with `useState`
 
 ## How to run a project
 
-1. Open the folder for the project you want to run.
-2. Install dependencies:
+1. Open the subfolder for the project you want to run (for example, `01_first-react-app`).
+2. From that project folder install dependencies:
 
 ```bash
 npm install
 ```
 
-3. Start the development server:
+3. Start the development server from the same folder:
 
 ```bash
 npm run dev
 ```
 
-4. Open the local URL shown in the terminal.
+4. Open the local URL shown in the terminal (usually `http://localhost:5173`).
+
+Tips:
+
+- If you use an editor terminal, change directory to the project first, e.g. `cd 02_react-component`.
+- Use a recent Node.js LTS (16+ or 18+). If you have multiple Node versions, use `nvm`/`nvm-windows` to switch.
+- If a project uses Tailwind, run the normal `npm run dev` after installing — the config is included.
 
 ## Notes
 
-Each subfolder is a separate Vite project with its own `package.json`.
-Use the project folder as your working directory before running install or dev commands.
+- Each subfolder is a separate Vite project with its own `package.json`.
+- Always run `npm install` inside the project folder before `npm run dev`.
+- If ports conflict, stop other dev servers or set a different port via Vite config or `--port`.
+
+## Quick checklist
+
+- Open project folder
+- Run `npm install`
+- Run `npm run dev`
+- Open the URL shown in the terminal
+
+---
