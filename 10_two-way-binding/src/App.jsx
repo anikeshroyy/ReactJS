@@ -4,6 +4,7 @@ export const App = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     console.log("Form Submitted by", userName);
+    setUserName("");
   };
 
   const [userName, setUserName] = useState("");
@@ -32,6 +33,10 @@ export const App = () => {
             <div className="flex items-center justify-between gap-4">
               <label htmlFor="userName">User Name</label>
               <input
+                onChange={(e) => {
+                  setUserName(e.target.value);
+                }}
+                value={userName}
                 type="text"
                 id="userName"
                 placeholder="Enter UserName"
@@ -41,10 +46,6 @@ export const App = () => {
             <div className="flex items-center justify-between gap-4">
               <label htmlFor="pass">Password</label>
               <input
-                onChange={(e) => {
-                  setUserName(e.target.value);
-                }}
-                value={""}
                 type="text"
                 id="pass"
                 placeholder="Enter PassWord"
