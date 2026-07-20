@@ -25,6 +25,12 @@ const App = () => {
     localStorage.setItem("notes", JSON.stringify(oldNotes));
   };
 
+  function deleteNotes(index) {
+    console.log("Notes Deleted", index);
+    oldNotes.splice(index, 1);
+    localStorage.setItem("notes", JSON.stringify(oldNotes));
+  }
+
   return (
     <div className="min-h-screen bg-slate-900 text-white p-10 flex gap-10">
       <form
@@ -71,6 +77,15 @@ const App = () => {
               <p className="text-gray-300 wrap-break-words">
                 {note.description}
               </p>
+
+              <button
+                onClick={() => {
+                  deleteNotes(index);
+                }}
+                className="bg-red-500 text-white px-2 rounded cursor-pointer"
+              >
+                Delete Notes
+              </button>
             </div>
           ))}
         </div>
