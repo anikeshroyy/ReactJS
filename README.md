@@ -12,6 +12,9 @@ This workspace contains several small React learning projects built with Vite.
 - `06_project-using-tailwindcss` — Tailwind CSS integration examples
 - `07_functions-in-react` — practicing functions and handlers in components
 - `08_react-useState` — state management with `useState`
+- `09_form-handling` — form input handling and submission examples
+- `10_two-way-binding` — two-way data binding with React inputs
+- `11_notes-app` — notes app example with add/remove functionality
 
 ## How to run a project
 
