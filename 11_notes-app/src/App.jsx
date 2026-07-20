@@ -4,7 +4,9 @@ const App = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
-  const oldNotes = JSON.parse(localStorage.getItem("notes")) || [];
+  const [notes, setNotes] = useState(
+    JSON.parse(localStorage.getItem("notes")) || [],
+  );
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -20,15 +22,18 @@ const App = () => {
       title,
     };
 
-    oldNotes.push(note);
+    const updateNotes = [...notes, note];
+    setNotes(updateNotes);
 
-    localStorage.setItem("notes", JSON.stringify(oldNotes));
+    localStorage.setItem("notes", JSON.stringify(updateNotes));
   };
 
   function deleteNotes(index) {
     console.log("Notes Deleted", index);
-    oldNotes.splice(index, 1);
-    localStorage.setItem("notes", JSON.stringify(oldNotes));
+    const updateNotes = [...notes];
+    updateNotes.splice(index, 1);
+    setNotes(updateNotes);
+    localStorage.setItem("notes", JSON.stringify(updateNotes));
   }
 
   return (
@@ -65,7 +70,7 @@ const App = () => {
         <h1 className="text-2xl font-bold mb-5">Your Note</h1>
 
         <div>
-          {oldNotes.map((note, index) => (
+          {notes.map((note, index) => (
             <div
               key={index}
               className="bg-slate-800 p-5 rounded-xl shadow-lg border border-slate-700 hover:shadow-xl transition mb-4"
