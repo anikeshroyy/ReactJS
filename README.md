@@ -15,6 +15,9 @@ This workspace contains several small React learning projects built with Vite.
 - `09_form-handling` — form input handling and submission examples
 - `10_two-way-binding` — two-way data binding with React inputs
 - `11_notes-app` — notes app example with add/remove functionality
+- `12_react-useEffect` — effect hooks and side-effect handling with `useEffect`
+- `13_gallery-app` — image gallery UI with filtering and layout examples
+- `14_react-router-DOM` — routing and navigation using React Router DOM
 
 ## How to run a project
 
