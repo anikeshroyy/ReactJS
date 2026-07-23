@@ -15,7 +15,7 @@ const Navbar = () => {
         <Route path="/" element={Login} />
         <Route path="/" element={Gandu} />
       </Routes>
-      <div className="bg-transparent">
+      <div className="bg-gray-400">
         <ul className="flex item-center justify-center gap-10  p-5">
           <li>
             <a href="/">Home</a>
