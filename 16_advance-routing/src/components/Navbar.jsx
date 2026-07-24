@@ -9,16 +9,16 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/About">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link to="/Login">Login</Link>
+            <Link to="/login">Login</Link>
           </li>
           <li>
-            <Link to="/Gandu">Gandu</Link>
+            <Link to="/product">Product</Link>
           </li>
         </ul>
       </div>

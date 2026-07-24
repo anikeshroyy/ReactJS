@@ -4,7 +4,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-import Gandu from "./pages/Gandu";
+import Product from "./pages/Product";
+import Footer from "./components/Footer";
+import Men from "./pages/Men";
+import Women from "./pages/Women";
+import Error404 from "./pages/Error404";
 
 export const App = () => {
   return (
@@ -16,8 +20,17 @@ export const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/gandu" element={<Gandu />} />
+
+        <Route path="/product" element={<Product />}>
+          {/* <Route index element={<Men />} /> */}
+          <Route path="men" element={<Men />} />
+          <Route path="women" element={<Women />} />
+        </Route>
+
+        <Route path="*" element={<Error404 />} />
       </Routes>
+
+      <Footer />
     </>
   );
 };
