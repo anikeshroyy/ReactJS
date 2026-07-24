@@ -9,8 +9,11 @@ import Footer from "./components/Footer";
 import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Error404 from "./pages/Error404";
+import Courses from "./pages/Courses";
+import CourseDetails from "./pages/CourseDetails";
 
 export const App = () => {
+
   return (
     <>
       <Navbar />
@@ -20,7 +23,8 @@ export const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
-
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/:courseId" element={<CourseDetails />} />
         <Route path="/product" element={<Product />}>
           {/* <Route index element={<Men />} /> */}
           <Route path="men" element={<Men />} />
