@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 const Error404 = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <section class="page_404">
@@ -15,9 +19,25 @@ const Error404 = () => {
 
                   <p>the page you are looking for not avaible!</p>
 
-                  <a href="" class="link_404">
-                    Go to Home
-                  </a>
+                  <div className="btn-class">
+                    <buttoon
+                      onClick={() => {
+                        navigate("/");
+                      }}
+                      class="link_404"
+                    >
+                      Go to Home
+                    </buttoon>
+
+                    <buttoon
+                      onClick={() => {
+                        navigate(-1);
+                      }}
+                      class="link_404"
+                    >
+                      Back to Last Page
+                    </buttoon>
+                  </div>
                 </div>
               </div>
             </div>

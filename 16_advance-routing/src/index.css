@@ -163,6 +163,14 @@ a:hover::after {
   background: #39ac31;
   margin: 20px 0;
   display: inline-block;
+  cursor: pointer;
+}
+
+.btn-class{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .contant_box_404 {
