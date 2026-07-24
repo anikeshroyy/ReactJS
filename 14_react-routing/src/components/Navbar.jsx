@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
@@ -9,28 +9,28 @@ const Navbar = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={Home} />
-        <Route path="/" element={About} />
-        <Route path="/" element={Contact} />
-        <Route path="/" element={Login} />
-        <Route path="/" element={Gandu} />
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Gandu" element={<Gandu />} />
       </Routes>
-      <div className="bg-gray-400">
+      <div className="bg-gray-400 fixed w-full top-0">
         <ul className="flex item-center justify-center gap-10  p-5">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/About">About</a>
+            <Link to="/About">About</Link>
           </li>
           <li>
-            <a href="/Contact">Contact</a>
+            <Link to="/Contact">Contact</Link>
           </li>
           <li>
-            <a href="/Login">Login</a>
+            <Link to="/Login">Login</Link>
           </li>
           <li>
-            <a href="/Gandu">Gandu</a>
+            <Link to="/Gandu">Gandu</Link>
           </li>
         </ul>
       </div>
