@@ -17,7 +17,11 @@ This workspace contains several small React learning projects built with Vite.
 - `11_notes-app` — notes app example with add/remove functionality
 - `12_react-useEffect` — effect hooks and side-effect handling with `useEffect`
 - `13_gallery-app` — image gallery UI with filtering and layout examples
-- `14_react-router-DOM` — routing and navigation using React Router DOM
+- `14_react-routing` — routing and navigation using React Router DOM
+- `15_portfolio-project` — portfolio website project
+- `16_advance-routing` — advanced routing concepts and patterns
+- `17_child-to-parent` — child-to-parent data communication example
+- `18_context-api` — context API state sharing example
 
 ## How to run a project
 
