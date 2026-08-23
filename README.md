@@ -22,6 +22,7 @@ This workspace contains several small React learning projects built with Vite.
 - `16_advance-routing` — advanced routing concepts and patterns
 - `17_child-to-parent` — child-to-parent data communication example
 - `18_context-api` — context API state sharing example
+- `19_redux-toolkit` — redux toolkit basics
 
 ## How to run a project
 
